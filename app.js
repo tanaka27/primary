@@ -36,9 +36,9 @@ function king(tt){
   if(tt>600&&c.width/2,(tt-6000)/3<c.height-50){
     ctx.font="30px Arial";
     ctx.fillStyle="red";
-    ctx.fillText("2^82589933 − 1 ",c.width/2,(tt-6000));
+    ctx.fillText("2^82589933 − 1 ",c.width/2,(tt-6000)*1.2);
     if((c.width/2>iX&&c.width/2<=iX+76)||(c.width/2+60>iX&&c.width/2+50<iX+152)){
-      if(Math.floor((tt-6000))===c.height-50)score+=99999999999999;
+      if(Math.floor((tt-6000)*1.2)===c.height-50)score+=99999999999999;
     }
   }
 }
@@ -121,11 +121,11 @@ function getNum(p){
 function put(){
 }
 left.onmousedown=function(event){
-  if(iX>0)iX-=30;
+  if(iX>0)iX-=50;
 }
 
 right.onmousedown=function(event){
-  if(iX<c.width-152)iX+=30;
+  if(iX<c.width-152)iX+=50;
 }
 
 var img=new Image();
