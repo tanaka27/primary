@@ -119,37 +119,13 @@ function getNum(p){
   }
 }
 function put(){
-  if(puttingLeft&&iX>0)iX-=10;
-  if(puttingRight&&iX<c.width-152)iX+=10;
 }
 left.onmousedown=function(event){
-  puttingLeft=true;
+  if(iX>0)iX-=30;
 }
 
 right.onmousedown=function(event){
-  puttingRight=true;
-}
-left.onmouseup=function(event){
-  puttingLeft=false;
-}
-
-right.onmouseup=function(event){
-  puttingRight=false;
-}
-  left.toutchstart=function(event){
-    puttingLeft=true;
-  }
-
-  right.toutchstart=function(event){
-    puttingRight=true;
-  }
-  left.toutchend=function(event){
-    puttingLeft=false;
-  }
-
-  right.toutchend=function(event){
-    puttingRight=false;
-
+  if(iX<c.width-152)iX+=30;
 }
 
 var img=new Image();
