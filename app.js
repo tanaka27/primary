@@ -136,6 +136,22 @@ left.onmouseup=function(event){
 right.onmouseup=function(event){
   puttingRight=false;
 }
+  left.toutchstart=function(event){
+    puttingLeft=true;
+  }
+
+  right.toutchstart=function(event){
+    puttingRight=true;
+  }
+  left.toutchend=function(event){
+    puttingLeft=false;
+  }
+
+  right.toutchend=function(event){
+    puttingRight=false;
+
+}
+
 var img=new Image();
 img.src="basket.png";
 document.addEventListener("keydown",event=>{
