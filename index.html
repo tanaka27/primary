@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html class="no-js" lang="">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>ball</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#fafafa">
+  <style>
+    canvas{
+      background-color:#add8e6;
+      margin-top:10px;
+      margin-left:10px;
+    }
+    .button{
+      width:100px;
+      height:40px;
+      border-radius:20px;
+    }
+    .buttons{
+      margin-left:400px;
+    }
+    #left{
+      background-color:#7f7fff;
+    }
+    #right{
+      background-color:#7fff7f;
+    }
+    button:focus {
+	   outline:0;
+    }
+    #left:active {
+      background-color:#a8a8ff;
+    }
+    #right:active {
+      background-color:#a8ffa8;
+    }
+    .expl{
+      position: absolute;
+      left:370px;
+      top:250px;
+    }
+    #start{
+      width:100px;
+      height:40px;
+      background-color:#ff7f7f;
+      border-radius: 10px;
+      position:relative;
+      left:90px;
+    }
+    #start:active{
+      background-color: #ffadad;
+    }
+
+  </style>
+
+</head>
+
+<body>
+<canvas id="myCanvas" width="960" height="640"></canvas>
+<div class="buttons">
+<button type="button" id="left" class="button">LEFT</button>
+<button type="button" id="right" class="button">RIGHT</button>
+</div>
+<div class="expl">
+  <h1>素数を集めよう！！</h1>
+  <button type="button" id="start">START</button>
+</div>
+  <script src="app.js"></script>
+</body>
+
+</html>
